@@ -45,7 +45,8 @@ function getPersonName(person) {
  *
  */
 function findPersonByName(persons, name) {
-
+    const nameOfPerson = persons.find((element) => element.name === name);
+    return nameOfPerson;
 }
 
 
@@ -60,5 +61,8 @@ function findPersonByName(persons, name) {
  * // totalAge will be 55
  */
 function getTotalAge(persons) {
-
+    let sum = 0;
+    for (let i = 0; i < persons.length ; i++) {
+        sum += persons[i].age;
+    } return sum;
 }
