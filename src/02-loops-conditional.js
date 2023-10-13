@@ -10,7 +10,9 @@
  */
 
 function isEven(number) {
-    
+    if (number % 2 === 0) {
+        return true
+    } return false
 }
 
 /**
@@ -27,7 +29,9 @@ function isEven(number) {
  */
 
 function isWithinRange(n, min, max) {
-
+    if (n >= min && n <= max) {
+        return true
+    } return false
 }
 
 /**
@@ -43,7 +47,9 @@ function isWithinRange(n, min, max) {
  */
 
 function stringContainsBa(string) {
-
+    if (string.includes("ba")) {
+        return true
+    } return false
 }
 
 
